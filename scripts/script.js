@@ -40,7 +40,7 @@ const darkModeIcon = document.getElementById('dark-mode-icon');
 const copyRight = document.getElementById('copyright-time');
 
 const currYear = new Date().getFullYear();
-copyRight.innerText = `© ${currYear} Ritik Mishra`
+copyRight.innerText = `© ${currYear} SovSA`
 
 modeToggle.addEventListener('click', () => {
     toggleMode();
@@ -147,3 +147,27 @@ if (prefersLight) {
 }
 
 
+var learnMenu = document.getElementById('learn-menu')
+var commMenu = document.getElementById('comm-menu')
+
+function toggleLearn() {
+    learnMenu.classList.toggle("display-flex")
+}
+
+
+function toggleComm() {
+  commMenu.classList.toggle("display-flex");
+}
+
+window.onclick = function (event) {
+  if (!event.target.matches(".dropdown-menu-container")) {
+    var dropdowns = document.getElementsByClassName("dropdown-menu");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains("display-flex")) {
+        openDropdown.classList.remove("display-flex");
+      }
+    }
+  }
+};

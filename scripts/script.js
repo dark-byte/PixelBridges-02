@@ -23,7 +23,6 @@ const advantagep = document.getElementsByClassName('advantage-p');
 const advantageInfoH2 = document.getElementById('advantage-info-h2');
 const darkLogo = document.getElementsByClassName('dark-logo');
 
-const partners = document.getElementById('partners');
 const tokenomics = document.getElementById('tokenomics');
 const dpx = document.getElementById('dpx');
 const rdpx = document.getElementById('rdpx');
@@ -32,12 +31,13 @@ const rdpxh3 = document.getElementById('rdpx-h3');
 const tokenModelLeftPartH2 = document.getElementById('token-model-left-part-h2');
 const tokenModelAllInfo = document.getElementsByClassName('token-model-all-info');
 
-const footer = document.getElementsByTagName('footer')[0];
+const footer = document.getElementById('footer');
 const footerH4 = document.getElementsByClassName('footer-item-h4');
 const footerP = document.getElementsByClassName('footer-item-p');
 const lightModeIcon = document.getElementById('light-mode-icon');
 const darkModeIcon = document.getElementById('dark-mode-icon');
 const copyRight = document.getElementById('copyright-time');
+
 
 const currYear = new Date().getFullYear();
 copyRight.innerText = `© ${currYear} SovSA`
@@ -75,6 +75,7 @@ function toggleMode() {
     nav.classList.toggle('light-mode-bg-color');
     header.classList.toggle('light-mode-bg-color');
     navUL.classList.toggle('light-mode-primary-text-color');
+    
 
     for (let i = 0; i < navLIs.length; i++) {
         navLIs[i].classList.toggle('light-mode-nav-items');
@@ -115,7 +116,6 @@ function toggleMode() {
         darkLogo[i].classList.toggle('light-mode-logo');
     }
 
-    partners.classList.toggle('light-mode-secondary-text-color');
     tokenomics.classList.toggle('light-mode-blue-color');
     dpx.classList.toggle('light-mode-white-bg');
     rdpx.classList.toggle('light-mode-white-bg');
@@ -137,6 +137,9 @@ function toggleMode() {
     for (let i = 0; i < footerP.length; i++) {
         footerP[i].classList.toggle('light-mode-primary-text-color');
     }
+
+    
+    console.log(tokenModelH2)
 }
 
 // Check preferred color scheme and set initial mode

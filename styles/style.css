@@ -192,6 +192,20 @@ nav {
     display: flex !important;
 }
 
+.social-btns a{
+    color: var(--primary-color);
+    margin-right: 10px;
+    transition: color ease 0.25s;
+}
+
+.social-btns a:last-child {
+    margin-right: 0;
+}
+
+.social-btns a:hover{
+    color: #fff;
+}
+
 @keyframes fade-in {
     from {
         opacity: 0;
@@ -375,7 +389,7 @@ nav {
 }
 
 .feature p {
-    font-family: 'JetBrains Mono', sans-serif;
+    font-family: sans-serif;
     font-weight: 200;
     line-height: 1.6;
     color: var(--secondary-color);
@@ -645,7 +659,7 @@ nav {
 }
 
 .footer-item img {
-    width: 40px;
+    width: 70px;
     margin-bottom: 5px;
 }
 

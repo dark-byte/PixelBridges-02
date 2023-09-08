@@ -38,9 +38,10 @@ const lightModeIcon = document.getElementById('light-mode-icon');
 const darkModeIcon = document.getElementById('dark-mode-icon');
 const copyRight = document.getElementById('copyright-time');
 
+const socialBtns = document.getElementsByClassName('social-btns-item')
+
 
 const currYear = new Date().getFullYear();
-copyRight.innerText = `© ${currYear} SovSA`
 
 modeToggle.addEventListener('click', () => {
     toggleMode();
@@ -75,7 +76,10 @@ function toggleMode() {
     nav.classList.toggle('light-mode-bg-color');
     header.classList.toggle('light-mode-bg-color');
     navUL.classList.toggle('light-mode-primary-text-color');
-    
+
+    for(let i = 0; i<socialBtns.length; i++){
+        socialBtns[i].classList.toggle('light-mode-nav-items')
+    }
 
     for (let i = 0; i < navLIs.length; i++) {
         navLIs[i].classList.toggle('light-mode-nav-items');
@@ -138,8 +142,6 @@ function toggleMode() {
         footerP[i].classList.toggle('light-mode-primary-text-color');
     }
 
-    
-    console.log(tokenModelH2)
 }
 
 // Check preferred color scheme and set initial mode

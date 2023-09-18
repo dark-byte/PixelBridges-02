@@ -14,7 +14,7 @@
     -webkit-background-clip: text !important;
     color: transparent !important;
     font-family: 'JetBrains Mono', monospace;
-    font-weight: 800;
+    font-weight: 400;
 }
 
 * {
@@ -22,7 +22,7 @@
     padding: 0;
     box-sizing: border-box;
     background-color: inherit;
-    font-family: sans-serif;
+    font-family: 'ilisarniqlight', sans-serif;
 }
 
 body {
@@ -87,7 +87,7 @@ nav {
     gap: 40px;
     font-size: 18px;
     color: rgb(138, 172, 244);
-    font-family: sans-serif;
+    font-family: 'ilisarniqlight', sans-serif;
 }
 
 .hide-icon {
@@ -99,7 +99,7 @@ nav {
 }
 
 .use-dopex-btn {
-    font-family: sans-serif;
+    font-family: 'ilisarniqlight', sans-serif;
     background-color: var(--primary-btn-color);
     border-radius: 5px;
     padding: 10px 16px;
@@ -310,7 +310,7 @@ nav {
 .tagline {
     color: var(--secondary-color);
     font-size: 18px;
-    font-family: sans-serif;
+    font-family: 'ilisarniqlight', sans-serif;
 }
 
 .hero-btn-container {
@@ -381,16 +381,17 @@ nav {
 
 .feature h5 {
     font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
     font-size: 18px;
 }
 
 .feature h3 {
-    font-family: sans-serif;
+    font-family: 'ilisarniqregular', sans-serif;
     font-size: 24px;
 }
 
 .feature p {
-    font-family: sans-serif;
+    font-family: 'ilisarniqlight', sans-serif;
     font-weight: 200;
     line-height: 1.6;
     color: var(--secondary-color);
@@ -417,7 +418,7 @@ nav {
     background-color: rgb(14, 17, 25);
     border-radius: 10px;
     padding: 24px;
-    font-family: sans-serif;
+    font-family: 'ilisarniqlight', sans-serif;
 }
 
 .advantage-info {
@@ -433,14 +434,14 @@ nav {
 }
 
 .advantage-info h2 {
-    font-family: sans-serif;
+    font-family: 'ilisarniqlight', sans-serif;
     font-size: 36px;
     margin-bottom: 24px;
     /* background-color: inherit; */
 }
 
 .advantage-info p {
-    font-family: sans-serif;
+    font-family: 'ilisarniqlight', sans-serif;
     font-size: 18px;
     margin-bottom: 24px;
     color: var(--secondary-color);
